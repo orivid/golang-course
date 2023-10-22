@@ -51,4 +51,21 @@ func main() {
 
 	fmt.Printf("This is the new length of the strings slice: %v\n", len(strings))
 
+	var nums []int
+	num := 42
+
+	for i := 0; i < 10; i++ {
+		nums = append(nums, num)
+		num++
+	}
+
+	for _, val := range nums {
+		fmt.Printf("The value is: %v and the type is :%T\n", val, val)
+	}
+
+	fmt.Println(nums[:5])
+	fmt.Println(nums[5:])
+	fmt.Println(nums[2:7])
+	fmt.Println(nums[1:6])
+
 }
